@@ -14,7 +14,7 @@ describe('Deleting an item', () => {
     cy.createItem(originalName);
 
     // Delete the item
-    cy.deleteItemByText(originalName);
+    cy.deleteItem(originalName);
 
     // Confirm it's no longer present
     cy.verifyItemTextNotExists(originalName);
